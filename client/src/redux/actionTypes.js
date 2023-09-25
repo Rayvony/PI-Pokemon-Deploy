@@ -1,0 +1,10 @@
+export const GET_ALLPKMNS = "GET_ALLPKMNS";
+export const FILTER = "FILTER";
+export const ORDER = "ORDER";
+export const GET_TYPES = "GET_TYPES";
+export const GET_PKMNBYNAME = "GET_PKMNBYNAME";
+export const GET_PKMNBYID = "GET_PKMNBYID";
+export const CLEAN_PKMNBYNAME = "CLEAN_PKMNBYNAME";
+export const CLEAN_PKMNBYID = "CLEAN_PKMNBYID";
+export const FILTER_TYPE = "FILTER_TYPE";
+export const ORDER_ATK = "ORDER_ATK";

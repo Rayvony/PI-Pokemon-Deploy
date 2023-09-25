@@ -1,0 +1,132 @@
+.formContainer {
+  max-width: 25%;
+  margin: 30px auto;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.8);
+}
+
+
+.formTitle {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Pokemon Fire Red";
+}
+
+.formLabel {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "Pokemon Fire Red";
+}
+
+.formInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.formSelect option {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.formButton {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "pokemon fire red";
+  font-size: 25px;
+}
+
+.formButton:hover {
+  background-color: #0056b3;
+}
+
+.formButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  border: 1px solid red;
+  background-color: #ffcccc;
+  color: red;
+}
+
+.errorText {
+  color: red;
+  margin: -20px 0px 0px 0px;
+  padding: 0px 0px 15px 0px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Pokemon Fire Red";
+}
+
+.centered {
+  max-width: 400px; /* Ancho máximo del contenedor centrado */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered .formInput {
+  width: 453.25px; /* Ancho del campo centrado */
+}
+
+.side-by-side {
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-by-side .formInput {
+  width: 200px;
+}
+
+.side-by-side .formSelect {
+  width: 218px;
+  text-transform: capitalize;
+}
+
+.types-container {
+  text-align: center;
+}
+
+.types-container .formLabel {
+  margin-bottom: 10px;
+}
+
+.wide-input {
+  width: 75%;
+}
+
+.wide-container {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.wide-container .formInput {
+  width: 175px;
+}
+
+.sprite .formInput {
+  text-transform: none !important;
+}

@@ -1,0 +1,144 @@
+.Loading {
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: "Pokemon Fire Red";
+font-size: 4vw;
+margin-top: 2vh;
+}
+
+.ball {
+margin: auto;
+width: 10vw; 
+height: 10vw; 
+border-radius: 50%;
+background: white;
+position: relative;
+box-shadow: -1vw 0 rgba(0, 0, 0, 0.1) inset; 
+animation: roll 1s ease-in-out infinite;
+background: linear-gradient(
+to bottom,
+#e83e35 0%,
+#e83e35 50.5%,
+#ffffff 50.51%,
+#ffffff 100%
+);
+}
+
+.ball:after {
+content: "";
+position: absolute;
+top: calc(5vw - 0.15vw); 
+left: 0;
+width: 10vw; 
+height: 0.15vw;
+background: #3f3f3f;
+}
+
+.ball:before {
+content: "";
+position: absolute;
+top: 50%; 
+left: 50%;
+transform: translate(-50% , -50%); 
+width: 2.7vw; 
+height: 2.7vw; 
+border: solid 0.3vw #3f3f3f; 
+border-radius: 50%;
+background: white;
+z-index: 1;
+box-shadow: 0 0 0.75vw -0.1vw #c62828 inset; 
+animation: button 3s ease infinite;
+}
+
+
+@keyframes roll {
+  from {
+    transform: rotate(0);
+  }
+  90%,
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes button {
+  from,
+  50%,
+  to {
+    box-shadow: 0 0 15px -2px #c62828 inset;
+  }
+
+  25%,
+  75% {
+    box-shadow: 0 0 10px -2px #1300ea inset;
+  }
+}
+
+/* Loading text */
+
+.loading-text {
+font-family: "Pokemon Fire Red";
+font-size: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: auto;
+flex-wrap: wrap;
+gap: 10px;
+margin-top: 4vh;
+}
+
+.letter {
+  animation: bounce 1s ease infinite;
+}
+
+.letter:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.letter:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.letter:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.letter:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.letter:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.letter:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.letter:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.letter:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.letter:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+.letter:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes bounce {
+0%   { transform: scale(1,1) translateY(0); }
+10%  { transform: scale(1.1,.9) translateY(0); }
+30%  { transform: scale(.9,1.1) translateY(-15px);}
+50%  { transform: scale(1.05,.95) translateY(0); }
+58%  { transform: scale(1,1) translateY(-3px); }
+65%  { transform: scale(1,1) translateY(0);}
+100% { transform: scale(1,1) translateY(0);}
+}

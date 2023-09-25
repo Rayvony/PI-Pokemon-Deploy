@@ -1,0 +1,14 @@
+.wrapperCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 16px;
+  height: 85vh;
+}
+
+.homeLoading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

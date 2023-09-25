@@ -1,0 +1,228 @@
+.pixel-corners,
+.pixel-corners--wrapper {
+  clip-path: polygon(0px calc(100% - 21px),
+    7px calc(100% - 21px),
+    7px calc(100% - 14px),
+    14px calc(100% - 7px),
+    21px calc(100% - 7px),
+    21px 100%,
+    calc(100% - 21px) 100%,
+    calc(100% - 21px) calc(100% - 7px),
+    calc(100% - 14px) calc(100% - 7px),
+    calc(100% - 7px) calc(100% - 14px),
+    calc(100% - 7px) calc(100% - 21px),
+    100% calc(100% - 21px),
+    100% 21px,
+    calc(100% - 7px) 21px,
+    calc(100% - 7px) 14px,
+    calc(100% - 14px) 7px,
+    calc(100% - 21px) 7px,
+    calc(100% - 21px) 0px,
+    21px 0px,
+    21px 7px,
+    14px 7px,
+    7px 14px,
+    7px 21px,
+    0px 21px);
+  position: relative;
+}
+.pixel-corners {
+  border: 7px solid transparent;
+}
+.pixel-corners--wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+.pixel-corners--wrapper .pixel-corners {
+  display: block;
+  clip-path: polygon(7px 21px,
+    14px 21px,
+    14px 14px,
+    21px 14px,
+    21px 7px,
+    calc(100% - 21px) 7px,
+    calc(100% - 21px) 14px,
+    calc(100% - 14px) 14px,
+    calc(100% - 14px) 21px,
+    calc(100% - 7px) 21px,
+    calc(100% - 7px) calc(100% - 21px),
+    calc(100% - 14px) calc(100% - 21px),
+    calc(100% - 14px) calc(100% - 14px),
+    calc(100% - 21px) calc(100% - 14px),
+    calc(100% - 21px) calc(100% - 7px),
+    21px calc(100% - 7px),
+    21px calc(100% - 14px),
+    14px calc(100% - 14px),
+    14px calc(100% - 21px),
+    7px calc(100% - 21px));
+}
+.pixel-corners::after,
+.pixel-corners--wrapper::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(0px calc(100% - 21px),
+    7px calc(100% - 21px),
+    7px calc(100% - 14px),
+    14px calc(100% - 7px),
+    21px calc(100% - 7px),
+    21px 100%,
+    calc(100% - 21px) 100%,
+    calc(100% - 21px) calc(100% - 7px),
+    calc(100% - 14px) calc(100% - 7px),
+    calc(100% - 7px) calc(100% - 14px),
+    calc(100% - 7px) calc(100% - 21px),
+    100% calc(100% - 21px),
+    100% 21px,
+    calc(100% - 7px) 21px,
+    calc(100% - 7px) 14px,
+    calc(100% - 14px) 7px,
+    calc(100% - 21px) 7px,
+    calc(100% - 21px) 0px,
+    21px 0px,
+    21px 7px,
+    14px 7px,
+    7px 14px,
+    7px 21px,
+    0px 21px,
+    0px 50%,
+    7px 50%,
+    7px 21px,
+    14px 21px,
+    14px 14px,
+    21px 14px,
+    21px 7px,
+    calc(100% - 21px) 7px,
+    calc(100% - 21px) 14px,
+    calc(100% - 14px) 14px,
+    calc(100% - 14px) 21px,
+    calc(100% - 7px) 21px,
+    calc(100% - 7px) calc(100% - 21px),
+    calc(100% - 14px) calc(100% - 21px),
+    calc(100% - 14px) calc(100% - 14px),
+    calc(100% - 21px) calc(100% - 14px),
+    calc(100% - 21px) calc(100% - 7px),
+    21px calc(100% - 7px),
+    21px calc(100% - 14px),
+    14px calc(100% - 14px),
+    14px calc(100% - 21px),
+    7px calc(100% - 21px),
+    7px 50%,
+    0px 50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  display: block;
+  pointer-events: none;
+}
+.pixel-corners::after {
+  margin: -7px;
+}
+/* mi codigo */
+
+.containerLanding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.professor{
+  margin-top: 480px;
+  margin-left: 320px;
+  height: 50%;
+  width: auto;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.options{
+  z-index: 1000;
+  position: absolute;
+    background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: inset 0px 0px 10px 10px rgb(146, 146, 146);
+  width: 198px;
+  height: 200px;
+  top: 49%;
+  left: 69%;
+}
+
+.grid{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+  padding: 15px 0 15px 0;
+  z-index: 1000;
+  margin: auto auto;
+  cursor: pointer;
+  font-size: 3rem;
+  font-family: "Pokemon Fire Red";
+  color: black;
+  text-shadow: 1px 2px 0px rgb(119, 119, 119);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.dialogueBox{
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0px 0px 10px 10px rgb(146, 146, 146);
+  padding: 50px;
+  z-index: 999;
+  position: absolute;
+  top: 67%;
+}
+
+.dialogueBox span{
+  font-family: "Pokemon Fire Red";
+  font-size: 3rem;
+  text-shadow: 1px 2px 0px rgb(119, 119, 119);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.blink {
+  animation: blink 1.5s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.arrow{
+  position: absolute;
+  z-index: 1007;
+  top: 54%;
+  left: 70.5%;
+  transform: scale(0.65);
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+
+

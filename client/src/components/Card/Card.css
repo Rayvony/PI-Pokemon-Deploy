@@ -1,0 +1,98 @@
+.cardContainer a {
+  text-decoration: none;
+  color: black;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centra verticalmente el contenido */
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  width: 200px;
+  height: 300px;
+  box-shadow: 9px 9px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.1s ease-in-out;
+  background-color: white;
+  text-transform: capitalize;
+}
+
+.Card:hover {
+  transform: translateY(-4px);
+  box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.8);
+}
+
+.Card img {
+  height: 100%;
+  width: auto;
+}
+
+
+
+.Card .spriteContainer {
+  width: 100%; /* Ensure the container takes the full width */
+  max-width: 200px; /* Maximum width */
+  max-height: 200px; /* Maximum height */
+  min-width: 120px; /* Minimum width */
+  min-height: 120px; /* Minimum height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.Card .spriteContainer img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain;
+}
+
+.Card h2 {
+  font-family: "Pokemon Fire Red";
+  font-size: 2.5rem;
+  margin: 8px 0;
+}
+
+.Card h3 {
+  font-size: 18.72px;
+  font-family: "Pokemon Fire Red";
+  font-weight: 100;
+  transform: scale(1.5);
+}
+
+.Card p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.wrapper {
+  width: auto;
+  margin: auto auto;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(2, calc(50%));
+  align-content: center;
+  align-items: center;
+}
+
+.icon {
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  transition: 200ms all;
+}
+
+.icon:hover {
+  filter: saturate(200%);
+  transform: scale(1.1);
+}
+
+.icon img {
+  height: 60%;
+  width: 60%;
+  margin: 20%;
+}

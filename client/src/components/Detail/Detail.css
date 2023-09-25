@@ -1,0 +1,128 @@
+.DetailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Detail {
+  min-height: 742px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 25px;
+  padding: 32px 75px 3px 75px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f9f9f9;
+  width: 300px;
+  box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.8);
+  margin-bottom: 100px;
+}
+
+.Detail img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.Detail h2 {
+  font-family: "Pokemon Fire Red";
+  font-size: 3em;
+  margin: auto auto;
+  text-transform: capitalize;
+}
+
+.Detail p {
+  margin: 8px 0;
+}
+
+.Detail .wrapper {
+  width: auto;
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: repeat(2, calc(50%));
+  gap: 0px;
+  align-content: center;
+  align-items: center;
+}
+
+.Detail .wrapper .icon {
+  border-radius: 100%;
+  height: 75px;
+  width: 75px;
+  margin: auto auto;
+  padding: 16px;
+  transition: 200ms all;
+  margin: 10px;
+}
+
+.Detail .wrapper .icon:hover {
+  filter: saturate(200%);
+}
+
+.Detail .wrapper .icon img {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.DetailStats {
+  width: inherit;
+  display: grid;
+  grid-template-columns: repeat(2, calc(50%));
+  align-items: center;
+  justify-items: center;
+}
+
+.stat {
+  padding: 10px;
+  font-family: "Pokemon Fire Red";
+  font-size: 2em;
+  font-weight: 100;
+}
+
+.DetailStats .stat{
+  line-height: 25px;
+  padding: 4px;
+}
+
+.pkmnSpriteContainer {
+  width: 300px;
+  height: 300px;
+}
+
+.pkmnSprite {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Maintain aspect ratio while fitting within the container */
+  cursor: pointer;
+  max-width: 300px; /* Maximum width */
+  max-height: 300px; /* Maximum height */
+  min-width: 200px; /* Minimum width */
+  min-height: 200px; /* Minimum height */
+}
+
+.Detail .material-symbols-rounded{
+  height: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  position: relative;
+  left: 60%;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.3 ) !important;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.Detail .material-symbols-rounded:hover{
+  color: rgba(0, 0, 0, 0.8) !important;
+
+}
+
