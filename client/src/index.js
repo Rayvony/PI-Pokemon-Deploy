@@ -8,8 +8,8 @@ import store from "./redux/store";
 import axios from "axios";
 
 //axios.defaults.baseURL = "http://localhost:3001/proyectoPKMN";
-axios.defaults.baseURL =
-  "pi-pokemon-deploy-production-75eb.up.railway.app/proyectoPKMN";
+// axios.defaults.baseURL =
+//   "pi-pokemon-deploy-production-75eb.up.railway.app/proyectoPKMN";
 
 const root = createRoot(document.getElementById("root")); // Create a root using createRoot
 
