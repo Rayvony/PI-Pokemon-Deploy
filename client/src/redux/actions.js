@@ -13,8 +13,7 @@ import {
 } from "./actionTypes";
 
 export const getAllPkmns = () => {
-  const endpoint =
-    "https://pi-pokemon-deploy-production-75eb.up.railway.app/proyectoPKMN/pokemons/";
+  const endpoint = "/pokemons/";
   return async (dispatch) => {
     try {
       const { data } = await axios.get(endpoint);
@@ -30,8 +29,7 @@ export const getAllPkmns = () => {
 };
 
 export const getTypes = () => {
-  const endpoint =
-    "https://pi-pokemon-deploy-production-75eb.up.railway.app/proyectoPKMN/types/";
+  const endpoint = "/types/";
   return async (dispatch) => {
     try {
       const { data } = await axios.get(endpoint);
@@ -47,7 +45,7 @@ export const getTypes = () => {
 };
 
 export const getPkmnByName = (name) => {
-  const endpoint = `https://pi-pokemon-deploy-production-75eb.up.railway.app/proyectoPKMN/pokemon/name?value=${name}`;
+  const endpoint = `/pokemon/name?value=${name}`;
   return async (dispatch) => {
     try {
       const { data } = await axios.get(endpoint);
@@ -63,7 +61,7 @@ export const getPkmnByName = (name) => {
 };
 
 export const getPkmnByID = (id) => {
-  const endpoint = `https://pi-pokemon-deploy-production-75eb.up.railway.app/proyectoPKMN/pokemon/${id}`;
+  const endpoint = `/pokemon/${id}`;
   return async (dispatch) => {
     try {
       const { data } = await axios.get(endpoint);
