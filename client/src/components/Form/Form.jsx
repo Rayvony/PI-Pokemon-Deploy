@@ -49,7 +49,8 @@ export default function Form({ playSelect }) {
       dispatch(cleanPkmnByName());
       navigate("/home");
     } catch (error) {
-      console.log("Error al crear el Pokémon");
+      console.log(error);
+      alert("Error al crear el Pokémon");
     }
   };
 
