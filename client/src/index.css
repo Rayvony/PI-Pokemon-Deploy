@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Pokemon Fire Red";
-  src: url(../public/assets/pokemon.ttf);
-}
-
 a {
   text-decoration: none !important;
   color: inherit !important;
