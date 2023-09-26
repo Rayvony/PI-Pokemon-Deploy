@@ -45,20 +45,20 @@ export function FormField({
 }
 
 export function validate(formData) {
-  const imagePattern = /\.(png|jpg|jpeg|gif)$/i; // regex imagenes
-
-  const validateStats = Object.keys(formData).some((fieldName) => {
-    const field = formData[fieldName];
-    return (
-      (field === "" && field !== "sprite") ||
-      (FormField.isNumber && field !== "sprite" && isNaN(field))
-    );
-  });
-
+  const imagePattern = /\.(png|jpg|jpeg|gif)$/i; // Expresión regular para extensiones de imagen
   return (
-    !validateStats &&
-    (formData.type1.trim() !== "Type 1" || formData.type2.trim() !== "") &&
-    (formData.type2 !== "noType" || formData.type2.trim() !== "") &&
+    formData.name.trim() !== "" &&
+    !isNaN(formData.hp) &&
+    !isNaN(formData.atk) &&
+    !isNaN(formData.spAtk) &&
+    !isNaN(formData.def) &&
+    !isNaN(formData.spDef) &&
+    !isNaN(formData.spd) &&
+    !isNaN(formData.height) &&
+    !isNaN(formData.weight) &&
+    formData.type1.trim() !== "" &&
+    formData.type1.trim() !== "Type 1" &&
     (formData.sprite.trim() === "" || imagePattern.test(formData.sprite))
   );
 }
+
