@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Pokemon Fire Red';
-    src: url('Pokemon-Fire-Red.ttf') format('truetype');
+    src: url('../public/assets/Pokemon-Fire-Red.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
