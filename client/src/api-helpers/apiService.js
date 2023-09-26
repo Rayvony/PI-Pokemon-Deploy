@@ -1,5 +1,5 @@
 import axios from "axios";
-const endpoint = "http://localhost:3001/proyectoPKMN/pokemon/";
+const endpoint = "/pokemon/";
 
 export async function postPkmn(pokemon) {
   try {
